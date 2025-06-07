@@ -36,5 +36,13 @@ public class Usuario {
     @JsonManagedReference
     private List<Nota> notas = new ArrayList<>();
 
-    
+    public void addNota(Nota nota) {
+        notas.add(nota);
+        nota.setUsuario(this);
+    }
+
+    public void removeNota(Nota nota) {
+        notas.remove(nota);
+        nota.setUsuario(null);
+    }
 }
