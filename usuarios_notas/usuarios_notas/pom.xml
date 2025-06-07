@@ -44,6 +44,26 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+
+	<dependency><!--dependencia para la validación de datos-->
+
+		<groupId>jakarta.validation</groupId>
+
+		<artifactId>jakarta.validation-api</artifactId>
+
+		<version>3.0.2</version>
+
+	</dependency>
+	<dependency><!--dependencia para la validación de datos-->
+
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.30</version>
+        <scope>provided</scope>
+    </dependency>
+
+ 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
